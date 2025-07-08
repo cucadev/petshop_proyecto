@@ -1,4 +1,4 @@
-import dotenv from 'dotenv';
+import dotenv from 'dotenv'; //
 
 const mongoose = require('mongoose');
 const express = require('express');
@@ -11,7 +11,7 @@ const comprasRoutes = require('./Backend/routes/comprasRoutes');
 const ventasRoutes = require('./Backend/routes/ventasRoutes');
 const cajaRoutes = require('./Backend/routes/cajaRoutes');
 
-dotenv.config();
+dotenv.config(); //
 
 
 app.get('/', (req, res) => {
@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 
 
 
-mongoose.connect(process.env.MONGO_URI, {
+mongoose.connect(process.env.MONGO_URI, {  //
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
@@ -51,7 +51,7 @@ app.use('/api/ventas', ventasRoutes);
 
 app.use('/api/caja', cajaRoutes);
 
-app.listen(p.env.PORT, () => { 
+app.listen(p.env.PORT, () => {  //
   console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
 });
 
