@@ -1,4 +1,4 @@
-import dotenv from 'dotenv'; //
+import dotenv from 'dotenv'; // Importar dot env
 
 const mongoose = require('mongoose');
 const express = require('express');
