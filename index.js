@@ -1,6 +1,9 @@
+import dotenv from 'dotenv';
+
 const mongoose = require('mongoose');
 const express = require('express');
 const app = express();
+
 
 const clientesRoutes = require('./Backend/routes/ClienteRoutes');
 const productRoutes = require('./Backend/routes/productRoutes');
@@ -8,8 +11,8 @@ const comprasRoutes = require('./Backend/routes/comprasRoutes');
 const ventasRoutes = require('./Backend/routes/ventasRoutes');
 const cajaRoutes = require('./Backend/routes/cajaRoutes');
 
+dotenv.config();
 
-const PORT = 3000;
 
 app.get('/', (req, res) => {
   res.send(`
@@ -20,7 +23,7 @@ app.get('/', (req, res) => {
 
 
 
-mongoose.connect('mongodb+srv://mayraferrazin:cucamongo30@cluster0.ez8baym.mongodb.net/petshop', {
+mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
@@ -48,7 +51,7 @@ app.use('/api/ventas', ventasRoutes);
 
 app.use('/api/caja', cajaRoutes);
 
-app.listen(PORT, () => {
+app.listen(p.env.PORT, () => { 
   console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
 });
 
