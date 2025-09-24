@@ -14,6 +14,9 @@ El objetivo del proyecto es digitalizar la operación del negocio y mejorar la e
 - ✅ **Compras:** Registro de compras con actualización automática de stock.
 - ✅ **Ventas:** Registro de ventas con descuento de stock.
 - ✅ **Caja:** Visualización de movimientos (ingresos y egresos) y cálculo de saldo diario.
+- ✅ **Servicios:**
+- ✅ **Empleados:**
+- ✅ **Agenda:**
 
 ## 🛠️ Tecnologías utilizadas
 - **Backend:** Node.js, Express.js, MongoDB (Mongoose)
