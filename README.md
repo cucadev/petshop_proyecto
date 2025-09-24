@@ -1,8 +1,10 @@
 # 🐾 PET SHOP Huellitas Felices - Creación de Sistema de Gestión Web
 
 ## 📌 Descripción
-**Huellitas Felices** es un sistema de gestión web para un Pet Shop veterinario.  
-Permite administrar clientes con sus respectivas mascotas, productos, compras, ventas y caja diaria de manera simple e intuitiva.  
+**Huellitas Felices** es un sistema de gestión web para un Pet Shop veterinario creado por alumnos del Instituto Superior de Formación Técnica Nº 225
+pertenecientes a la carrera Tecnicatura Superior en Desarrollo de Software.
+
+Este sistema permitirá administrar clientes con sus respectivas mascotas, productos, compras, ventas y caja diaria de manera simple e intuitiva.  
 El objetivo del proyecto es digitalizar la operación del negocio y mejorar la experiencia de gestión para los empleados y administradores.
 
 ## 🚀 Funcionalidades
